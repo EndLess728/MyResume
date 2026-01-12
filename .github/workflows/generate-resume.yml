@@ -38,17 +38,23 @@ jobs:
           python << 'EOF'
           import os
           import json
+          import sys
           from google.oauth2 import service_account
           from googleapiclient.discovery import build
           from googleapiclient.http import MediaFileUpload
+          from googleapiclient.errors import HttpError
 
           # Load credentials from environment
           creds_json = os.environ['GOOGLE_DRIVE_CREDENTIALS']
           creds_dict = json.loads(creds_json)
 
+          # Print service account email for debugging
+          service_email = creds_dict.get('client_email', 'unknown')
+          print(f"🔑 Using service account: {service_email}")
+
           credentials = service_account.Credentials.from_service_account_info(
               creds_dict,
-              scopes=['https://www.googleapis.com/auth/drive.file']
+              scopes=['https://www.googleapis.com/auth/drive']  # Full Drive access
           )
 
           service = build('drive', 'v3', credentials=credentials)
@@ -59,34 +65,48 @@ jobs:
 
           media = MediaFileUpload(file_path, mimetype='application/pdf', resumable=True)
 
-          if file_id:
-              # UPDATE existing file (keeps same link!)
-              file = service.files().update(
-                  fileId=file_id,
-                  media_body=media
-              ).execute()
-              print(f"✅ Updated existing file: https://drive.google.com/file/d/{file_id}/view")
-          else:
-              # CREATE new file (first time only)
-              file_metadata = {
-                  'name': 'Mantu_CV.pdf',
-                  'parents': [folder_id]
-              }
-              file = service.files().create(
-                  body=file_metadata,
-                  media_body=media,
-                  fields='id'
-              ).execute()
-              new_file_id = file.get('id')
-              
-              # Make it publicly accessible
-              service.permissions().create(
-                  fileId=new_file_id,
-                  body={'type': 'anyone', 'role': 'reader'}
-              ).execute()
-              
-              print(f"✅ Created new file! Add this FILE_ID to GitHub secrets: {new_file_id}")
-              print(f"📎 Shareable link: https://drive.google.com/file/d/{new_file_id}/view")
+          try:
+              if file_id:
+                  # UPDATE existing file (keeps same link!)
+                  file = service.files().update(
+                      fileId=file_id,
+                      media_body=media
+                  ).execute()
+                  print(f"✅ Updated existing file: https://drive.google.com/file/d/{file_id}/view")
+              else:
+                  # CREATE new file (first time only)
+                  file_metadata = {
+                      'name': 'Mantu_CV.pdf',
+                      'parents': [folder_id]
+                  }
+                  file = service.files().create(
+                      body=file_metadata,
+                      media_body=media,
+                      fields='id'
+                  ).execute()
+                  new_file_id = file.get('id')
+                  
+                  # Make it publicly accessible
+                  service.permissions().create(
+                      fileId=new_file_id,
+                      body={'type': 'anyone', 'role': 'reader'}
+                  ).execute()
+                  
+                  print(f"✅ Created new file! Add this FILE_ID to GitHub secrets: {new_file_id}")
+                  print(f"📎 Shareable link: https://drive.google.com/file/d/{new_file_id}/view")
+          except HttpError as e:
+              if e.resp.status == 404:
+                  print(f"❌ ERROR: File not found (ID: {file_id})")
+                  print(f"")
+                  print(f"🔧 FIX: Share the file with your service account:")
+                  print(f"   1. Go to Google Drive")
+                  print(f"   2. Right-click on Mantu_CV.pdf → Share")
+                  print(f"   3. Add: {service_email}")
+                  print(f"   4. Give 'Editor' permission")
+                  print(f"   5. Re-run this workflow")
+                  sys.exit(1)
+              else:
+                  raise
           EOF
 
       - name: Upload PDF artifact
