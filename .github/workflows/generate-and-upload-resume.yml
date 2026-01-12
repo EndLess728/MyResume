@@ -1,4 +1,4 @@
-name: Generate Resume PDF and Upload to Google Drive
+name: Generate & Upload Resume PDF
 
 on:
   push:
