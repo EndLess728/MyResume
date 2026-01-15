@@ -12,7 +12,7 @@
   page-bottom-margin: 0.7in,
   page-left-margin: 0.7in,
   page-right-margin: 0.7in,
-  page-show-footer: false,
+  page-show-footer: true,
   page-show-top-note: true,
   colors-body: rgb(0, 0, 0),
   colors-name: rgb(0, 0, 0),
@@ -25,21 +25,21 @@
   typography-line-spacing: 0.4em,
   typography-alignment: "justified",
   typography-date-and-location-column-alignment: right,
-  typography-font-family-body: "XCharter",
-  typography-font-family-name: "XCharter",
-  typography-font-family-headline: "XCharter",
-  typography-font-family-connections: "XCharter",
-  typography-font-family-section-titles: "XCharter",
+  typography-font-family-body: "New Computer Modern",
+  typography-font-family-name: "New Computer Modern",
+  typography-font-family-headline: "New Computer Modern",
+  typography-font-family-connections: "New Computer Modern",
+  typography-font-family-section-titles: "New Computer Modern",
   typography-font-size-body: 10pt,
-  typography-font-size-name: 25pt,
+  typography-font-size-name: 30pt,
   typography-font-size-headline: 10pt,
   typography-font-size-connections: 10pt,
-  typography-font-size-section-titles: 1.2em,
+  typography-font-size-section-titles: 1.4em,
   typography-small-caps-name: false,
   typography-small-caps-headline: false,
   typography-small-caps-connections: false,
   typography-small-caps-section-titles: false,
-  typography-bold-name: false,
+  typography-bold-name: true,
   typography-bold-headline: false,
   typography-bold-connections: false,
   typography-bold-section-titles: true,
@@ -53,28 +53,28 @@
   header-connections-hyperlink: true,
   header-connections-show-icons: false,
   header-connections-display-urls-instead-of-usernames: true,
-  header-connections-separator: "|",
+  header-connections-separator: "•",
   header-connections-space-between-connections: 0.5cm,
   section-titles-type: "with_full_line",
   section-titles-line-thickness: 0.5pt,
   section-titles-space-above: 0.5cm,
   section-titles-space-below: 0.3cm,
   sections-allow-page-break: true,
-  sections-space-between-text-based-entries: 0.15cm,
-  sections-space-between-regular-entries: 0.42cm,
+  sections-space-between-text-based-entries: 0.3em,
+  sections-space-between-regular-entries: 1.2em,
   entries-date-and-location-width: 4.15cm,
-  entries-side-space: 0cm,
+  entries-side-space: 0.2cm,
   entries-space-between-columns: 0.1cm,
   entries-allow-page-break: false,
   entries-short-second-row: false,
   entries-summary-space-left: 0cm,
-  entries-summary-space-above: 0.08cm,
-  entries-highlights-bullet:  text(13pt, [•], baseline: -0.6pt) ,
-  entries-highlights-nested-bullet:  text(13pt, [•], baseline: -0.6pt) ,
-  entries-highlights-space-left: 0cm,
-  entries-highlights-space-above: 0.08cm,
-  entries-highlights-space-between-items: 0.08cm,
-  entries-highlights-space-between-bullet-and-text: 0.3em,
+  entries-summary-space-above: 0cm,
+  entries-highlights-bullet:  "◦" ,
+  entries-highlights-nested-bullet:  "◦" ,
+  entries-highlights-space-left: 0.15cm,
+  entries-highlights-space-above: 0cm,
+  entries-highlights-space-between-items: 0cm,
+  entries-highlights-space-between-bullet-and-text: 0.5em,
   date: datetime(
     year: 2026,
     month: 1,
@@ -106,11 +106,15 @@
 
 #regular-entry(
   [
-    #strong[Sr. React Native Developer & Team Lead], iTechnolabs Pvt. Ltd. -- Mohali, Punjab
+    #strong[Sr. React Native Developer & Team Lead]
+
+    #emph[iTechnolabs Pvt. Ltd.]
 
   ],
   [
-    Aug 2022 – present
+    #emph[Mohali, Punjab]
+
+    #emph[Aug 2022 – present]
 
   ],
   main-column-second-row: [
@@ -135,11 +139,15 @@
 
 #regular-entry(
   [
-    #strong[Sr. React Native Developer], Suffescom Solutions -- Mohali, Punjab
+    #strong[Sr. React Native Developer]
+
+    #emph[Suffescom Solutions]
 
   ],
   [
-    Oct 2021 – Aug 2022
+    #emph[Mohali, Punjab]
+
+    #emph[Oct 2021 – Aug 2022]
 
   ],
   main-column-second-row: [
@@ -156,11 +164,15 @@
 
 #regular-entry(
   [
-    #strong[Junior iOS Developer & React Native Developer], Immanent Solutions -- Mohali, Punjab
+    #strong[Junior iOS Developer & React Native Developer]
+
+    #emph[Immanent Solutions]
 
   ],
   [
-    Sept 2018 – Oct 2021
+    #emph[Mohali, Punjab]
+
+    #emph[Sept 2018 – Oct 2021]
 
   ],
   main-column-second-row: [
@@ -318,13 +330,15 @@
 
 #education-entry(
   [
-    #strong[Sri Sukhmani Institute of Information & Technology], B.Tech in Computer Science
+    #strong[Sri Sukhmani Institute of Information & Technology]
 
   ],
   [
-    Nov 2019
+    #emph[Nov 2019]
 
   ],
   main-column-second-row: [
+    #emph[B.Tech] #emph[in] #emph[Computer Science]
+
   ],
 )
