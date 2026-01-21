@@ -177,7 +177,7 @@
 
   #regular-entry(
   [
-    #strong[#link("https://github.com/EndLess728/expo-check-installed-apps")[expo-check-installed-apps]]
+    #strong[#link("https://www.npmjs.com/package/expo-check-installed-apps")[expo-check-installed-apps]]
 
   ],
   [
@@ -194,7 +194,7 @@
 
   #regular-entry(
   [
-    #strong[#link("https://github.com/EndLess728/react-native-mediapipe-posedetection")[react-native-mediapipe-posedetection]]
+    #strong[#link("https://www.npmjs.com/package/react-native-mediapipe-posedetection")[react-native-mediapipe-posedetection]]
 
   ],
   [

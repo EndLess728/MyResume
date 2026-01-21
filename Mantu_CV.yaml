@@ -63,7 +63,7 @@ cv:
           - Achieved 100% security compliance by implementing HMAC-based API authentication to mitigate unauthorized access risks.
           - Shortened development time by 40% by migrating native iOS codebases to React Native.
     open_source:
-      - name: "[expo-check-installed-apps](https://github.com/EndLess728/expo-check-installed-apps)"
+      - name: "[expo-check-installed-apps](https://www.npmjs.com/package/expo-check-installed-apps)"
         date:
         start_date:
         end_date:
@@ -72,7 +72,7 @@ cv:
         highlights:
           - Created an Expo module enabling developers to query device-installed apps for feature gating.
           - Supports Expo SDK 51+ with automatic native code injection via config plugin.
-      - name: "[react-native-mediapipe-posedetection](https://github.com/EndLess728/react-native-mediapipe-posedetection)"
+      - name: "[react-native-mediapipe-posedetection](https://www.npmjs.com/package/react-native-mediapipe-posedetection)"
         date:
         start_date:
         end_date:
