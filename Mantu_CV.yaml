@@ -7,7 +7,7 @@ cv:
   phone: +91 9464542728
   email: aryanmk.mk5@gmail.com
   custom_connections:
-    - placeholder: Linkdin
+    - placeholder: Linkedin
       url: https://www.linkedin.com/in/mantu-kumar-16439117b/
       fontawesome_icon: linkedin
   website: https://endless728.github.io/
@@ -62,6 +62,25 @@ cv:
           - Engineered 4 scalable mobile apps for event, education, social, and crypto sectors, serving 1,000+ users via iOS and React Native.
           - Achieved 100% security compliance by implementing HMAC-based API authentication to mitigate unauthorized access risks.
           - Shortened development time by 40% by migrating native iOS codebases to React Native.
+    open_source:
+      - name: "[expo-check-installed-apps](https://github.com/EndLess728/expo-check-installed-apps)"
+        date:
+        start_date:
+        end_date:
+        location:
+        summary: Expo config plugin to detect installed apps on Android and iOS (32.5K+ downloads)
+        highlights:
+          - Created an Expo module enabling developers to query device-installed apps for feature gating.
+          - Supports Expo SDK 51+ with automatic native code injection via config plugin.
+      - name: "[react-native-mediapipe-posedetection](https://github.com/EndLess728/react-native-mediapipe-posedetection)"
+        date:
+        start_date:
+        end_date:
+        location:
+        summary: Real-time pose detection for React Native using MediaPipe BlazePose with GPU acceleration (708+ downloads)
+        highlights:
+          - Crafted a high-performance native module supporting 33 pose landmarks with ~15 FPS real-time detection.
+          - Implemented GPU-accelerated inference for iOS and Android using Vision Camera frame processing.
     projects:
       - name: "[Focusbear - ADHD](https://focusbear.io)"
         date:
@@ -117,25 +136,6 @@ cv:
           - Designed a resilient background location service that bypasses Android battery optimizations (Doze mode), ensuring 100% real-time tracking reliability.
           - Created stutter-free map animations by implementing custom coordinate interpolation for driver markers, ensuring smooth real-time location updates.
           - Established critical permission handling flows to secure 'Always Allow' access, resolving background execution failures across diverse Android OEM devices.
-    open_source:
-      - name: "[react-native-mediapipe-posedetection](https://github.com/EndLess728/react-native-mediapipe-posedetection)"
-        date:
-        start_date:
-        end_date:
-        location:
-        summary: Real-time pose detection for React Native using MediaPipe BlazePose with GPU acceleration.
-        highlights:
-          - Crafted a high-performance native module supporting 33 pose landmarks with ~15 FPS real-time detection.
-          - Implemented GPU-accelerated inference for iOS and Android using Vision Camera frame processing.
-      - name: "[expo-check-installed-apps](https://github.com/EndLess728/expo-check-installed-apps)"
-        date:
-        start_date:
-        end_date:
-        location:
-        summary: Expo config plugin to detect installed apps on Android and iOS.
-        highlights:
-          - Created an Expo module enabling developers to query device-installed apps for feature gating.
-          - Supports Expo SDK 51+ with automatic native code injection via config plugin.
     education:
       - institution: Sri Sukhmani Institute of Information & Technology
         area: Computer Science

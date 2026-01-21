@@ -88,7 +88,7 @@
 #connections(
   [#link("tel:+91-94645-42728", icon: false, if-underline: false, if-color: false)[094645 42728]],
   [#link("mailto:aryanmk.mk5@gmail.com", icon: false, if-underline: false, if-color: false)[aryanmk.mk5\@gmail.com]],
-  [#link("https://www.linkedin.com/in/mantu-kumar-16439117b/", icon: false, if-underline: false, if-color: false)[Linkdin]],
+  [#link("https://www.linkedin.com/in/mantu-kumar-16439117b/", icon: false, if-underline: false, if-color: false)[Linkedin]],
   [#link("https://endless728.github.io/", icon: false, if-underline: false, if-color: false)[endless728.github.io]],
   [#link("https://github.com/EndLess728", icon: false, if-underline: false, if-color: false)[github.com\/EndLess728]],
 )
@@ -169,6 +169,42 @@
     - Achieved 100\% security compliance by implementing HMAC-based API authentication to mitigate unauthorized access risks.
 
     - Shortened development time by 40\% by migrating native iOS codebases to React Native.
+
+  ],
+)
+
+== Open Source
+
+  #regular-entry(
+  [
+    #strong[#link("https://github.com/EndLess728/expo-check-installed-apps")[expo-check-installed-apps]]
+
+  ],
+  [
+  ],
+  main-column-second-row: [
+    #summary[Expo config plugin to detect installed apps on Android and iOS (32.5K+ downloads)]
+
+    - Created an Expo module enabling developers to query device-installed apps for feature gating.
+
+    - Supports Expo SDK 51+ with automatic native code injection via config plugin.
+
+  ],
+)
+
+  #regular-entry(
+  [
+    #strong[#link("https://github.com/EndLess728/react-native-mediapipe-posedetection")[react-native-mediapipe-posedetection]]
+
+  ],
+  [
+  ],
+  main-column-second-row: [
+    #summary[Real-time pose detection for React Native using MediaPipe BlazePose with GPU acceleration (708+ downloads)]
+
+    - Crafted a high-performance native module supporting 33 pose landmarks with \~15 FPS real-time detection.
+
+    - Implemented GPU-accelerated inference for iOS and Android using Vision Camera frame processing.
 
   ],
 )
@@ -274,42 +310,6 @@
     - Created stutter-free map animations by implementing custom coordinate interpolation for driver markers, ensuring smooth real-time location updates.
 
     - Established critical permission handling flows to secure 'Always Allow' access, resolving background execution failures across diverse Android OEM devices.
-
-  ],
-)
-
-== Open Source
-
-  #regular-entry(
-  [
-    #strong[#link("https://github.com/EndLess728/react-native-mediapipe-posedetection")[react-native-mediapipe-posedetection]]
-
-  ],
-  [
-  ],
-  main-column-second-row: [
-    #summary[Real-time pose detection for React Native using MediaPipe BlazePose with GPU acceleration.]
-
-    - Crafted a high-performance native module supporting 33 pose landmarks with \~15 FPS real-time detection.
-
-    - Implemented GPU-accelerated inference for iOS and Android using Vision Camera frame processing.
-
-  ],
-)
-
-  #regular-entry(
-  [
-    #strong[#link("https://github.com/EndLess728/expo-check-installed-apps")[expo-check-installed-apps]]
-
-  ],
-  [
-  ],
-  main-column-second-row: [
-    #summary[Expo config plugin to detect installed apps on Android and iOS.]
-
-    - Created an Expo module enabling developers to query device-installed apps for feature gating.
-
-    - Supports Expo SDK 51+ with automatic native code injection via config plugin.
 
   ],
 )

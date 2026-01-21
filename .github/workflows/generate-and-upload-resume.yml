@@ -29,6 +29,9 @@ jobs:
           pip install "rendercv[full]"
           pip install google-api-python-client google-auth
 
+      - name: Update npm download stats
+        run: python3 scripts/update_npm_stats.py Mantu_CV.yaml
+
       - name: Generate Resume PDF
         run: rendercv render Mantu_CV.yaml
 
