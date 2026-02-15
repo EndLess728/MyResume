@@ -183,7 +183,7 @@
   [
   ],
   main-column-second-row: [
-    #summary[Expo config plugin to detect installed apps on Android and iOS (54.1K+ downloads)]
+    #summary[Expo config plugin to detect installed apps on Android and iOS (62.0K+ downloads)]
 
     - Created an Expo module enabling developers to query device-installed apps for feature gating.
 
@@ -200,7 +200,7 @@
   [
   ],
   main-column-second-row: [
-    #summary[Real-time pose detection for React Native using MediaPipe BlazePose with GPU acceleration (995+ downloads)]
+    #summary[Real-time pose detection for React Native using MediaPipe BlazePose with GPU acceleration (1.2K+ downloads)]
 
     - Crafted a high-performance native module supporting 33 pose landmarks with \~15 FPS real-time detection.
 
