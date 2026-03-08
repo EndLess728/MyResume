@@ -1,12 +1,14 @@
 // Import the rendercv function and all the refactored components
-#import "@preview/rendercv:0.1.0": *
+#import "@preview/rendercv:0.2.0": *
 
 // Apply the rendercv template with custom configuration
 #show: rendercv.with(
   name: "Mantu",
+  title: "Mantu - CV",
   footer: context { [#emph[Mantu -- #str(here().page())\/#str(counter(page).final().first())]] },
   top-note: [ #emph[Last updated in Jan 2026] ],
   locale-catalog-language: "en",
+  text-direction: ltr,
   page-size: "us-letter",
   page-top-margin: 0.7in,
   page-bottom-margin: 0.7in,
@@ -67,6 +69,7 @@
   entries-space-between-columns: 0.1cm,
   entries-allow-page-break: false,
   entries-short-second-row: false,
+  entries-degree-width: 1cm,
   entries-summary-space-left: 0cm,
   entries-summary-space-above: 0.08cm,
   entries-highlights-bullet:  text(13pt, [•], baseline: -0.6pt) ,
@@ -183,7 +186,7 @@
   [
   ],
   main-column-second-row: [
-    #summary[Expo config plugin to detect installed apps on Android and iOS (83.9K+ downloads)]
+    #summary[Expo config plugin to detect installed apps on Android and iOS (91.5K+ downloads)]
 
     - Created an Expo module enabling developers to query device-installed apps for feature gating.
 
@@ -200,7 +203,7 @@
   [
   ],
   main-column-second-row: [
-    #summary[Real-time pose detection for React Native using MediaPipe BlazePose with GPU acceleration (1.5K+ downloads)]
+    #summary[Real-time pose detection for React Native using MediaPipe BlazePose with GPU acceleration (1.6K+ downloads)]
 
     - Crafted a high-performance native module supporting 33 pose landmarks with \~15 FPS real-time detection.
 
