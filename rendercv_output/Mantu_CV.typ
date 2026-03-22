@@ -1,5 +1,5 @@
 // Import the rendercv function and all the refactored components
-#import "@preview/rendercv:0.2.0": *
+#import "@preview/rendercv:0.3.0": *
 
 // Apply the rendercv template with custom configuration
 #show: rendercv.with(
@@ -186,7 +186,7 @@
   [
   ],
   main-column-second-row: [
-    #summary[Expo config plugin to detect installed apps on Android and iOS (97.5K+ downloads)]
+    #summary[Expo config plugin to detect installed apps on Android and iOS (102.2K+ downloads)]
 
     - Created an Expo module enabling developers to query device-installed apps for feature gating.
 
@@ -203,7 +203,7 @@
   [
   ],
   main-column-second-row: [
-    #summary[Real-time pose detection for React Native using MediaPipe BlazePose with GPU acceleration (1.7K+ downloads)]
+    #summary[Real-time pose detection for React Native using MediaPipe BlazePose with GPU acceleration (1.8K+ downloads)]
 
     - Crafted a high-performance native module supporting 33 pose landmarks with \~15 FPS real-time detection.
 
