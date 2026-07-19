@@ -5,7 +5,7 @@ cv:
   location:
   photo:
   phone: +91 9464542728
-  email: aryanmk.mk5@gmail.com
+  email: mantu.codes@gmail.com
   custom_connections:
     - placeholder: Linkedin
       url: https://www.linkedin.com/in/mantu-kumar-16439117b/
@@ -148,6 +148,8 @@ cv:
         highlights:
 design:
   theme: engineeringresumes
+  templates:
+    top_note: '*LAST_UPDATED MONTH_ABBREVIATION DAY, YEAR*'
   # page:
   #   size: us-letter
   #   top_margin: 0.7in
@@ -279,7 +281,7 @@ design:
   #     date_and_location_column: DATE
 locale:
   language: english
-  # last_updated: Last updated in
+  last_updated: Last updated on
   # month: month
   # months: months
   # year: year
@@ -312,7 +314,6 @@ locale:
   #   - November
   #   - December
 settings:
-  current_date: "2026-01-11"
   render_command:
     design:
     locale:

@@ -6,7 +6,7 @@
   name: "Mantu",
   title: "Mantu - CV",
   footer: context { [#emph[Mantu -- #str(here().page())\/#str(counter(page).final().first())]] },
-  top-note: [ #emph[Last updated in Jan 2026] ],
+  top-note: [ #emph[Last updated on July 20, 2026] ],
   locale-catalog-language: "en",
   text-direction: ltr,
   page-size: "us-letter",
@@ -80,8 +80,8 @@
   entries-highlights-space-between-bullet-and-text: 0.3em,
   date: datetime(
     year: 2026,
-    month: 1,
-    day: 11,
+    month: 7,
+    day: 20,
   ),
 )
 
@@ -90,7 +90,7 @@
 
 #connections(
   [#link("tel:+91-94645-42728", icon: false, if-underline: false, if-color: false)[094645 42728]],
-  [#link("mailto:aryanmk.mk5@gmail.com", icon: false, if-underline: false, if-color: false)[aryanmk.mk5\@gmail.com]],
+  [#link("mailto:mantu.codes@gmail.com", icon: false, if-underline: false, if-color: false)[mantu.codes\@gmail.com]],
   [#link("https://www.linkedin.com/in/mantu-kumar-16439117b/", icon: false, if-underline: false, if-color: false)[Linkedin]],
   [#link("https://endless728.github.io/", icon: false, if-underline: false, if-color: false)[endless728.github.io]],
   [#link("https://github.com/EndLess728", icon: false, if-underline: false, if-color: false)[github.com\/EndLess728]],
@@ -186,7 +186,7 @@
   [
   ],
   main-column-second-row: [
-    #summary[Expo config plugin to detect installed apps on Android and iOS (247.5K+ downloads)]
+    #summary[Expo config plugin to detect installed apps on Android and iOS (32.5K+ downloads)]
 
     - Created an Expo module enabling developers to query device-installed apps for feature gating.
 
@@ -203,7 +203,7 @@
   [
   ],
   main-column-second-row: [
-    #summary[Real-time pose detection for React Native using MediaPipe BlazePose with GPU acceleration (8.0K+ downloads)]
+    #summary[Real-time pose detection for React Native using MediaPipe BlazePose with GPU acceleration (708+ downloads)]
 
     - Crafted a high-performance native module supporting 33 pose landmarks with \~15 FPS real-time detection.
 
