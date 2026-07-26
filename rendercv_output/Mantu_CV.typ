@@ -188,7 +188,7 @@ Senior React Native Developer with 7+ years of experience building high-performa
   [
   ],
   main-column-second-row: [
-    #summary[Expo config plugin to detect installed apps on Android and iOS (32.5K+ downloads)]
+    #summary[Expo config plugin to detect installed apps on Android and iOS (265.3K+ downloads)]
 
     - Created an Expo module enabling developers to query device-installed apps for feature gating
 
@@ -205,7 +205,7 @@ Senior React Native Developer with 7+ years of experience building high-performa
   [
   ],
   main-column-second-row: [
-    #summary[Real-time pose detection for React Native using MediaPipe BlazePose with GPU acceleration (708+ downloads)]
+    #summary[Real-time pose detection for React Native using MediaPipe BlazePose with GPU acceleration (9.6K+ downloads)]
 
     - Built a high-performance native module supporting 33 pose landmarks with \~15 FPS real-time detection
 
