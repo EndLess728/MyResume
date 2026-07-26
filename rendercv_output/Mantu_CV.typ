@@ -6,7 +6,7 @@
   name: "Mantu",
   title: "Mantu - CV",
   footer: context { [#emph[Mantu -- #str(here().page())\/#str(counter(page).final().first())]] },
-  top-note: [ #emph[Last updated on July 19, 2026] ],
+  top-note: [ #emph[Last updated on July 26, 2026] ],
   locale-catalog-language: "en",
   text-direction: ltr,
   page-size: "us-letter",
@@ -81,7 +81,7 @@
   date: datetime(
     year: 2026,
     month: 7,
-    day: 19,
+    day: 26,
   ),
 )
 
@@ -97,13 +97,15 @@
 )
 
 
+== Profile Summary
+
+Senior React Native Developer with 7+ years of experience building high-performance mobile apps across iOS and Android, specializing in native modules, real-time ML integration, and cross-platform architecture
+
 == Skills
 
 #strong[Languages:] JavaScript, TypeScript, Swift, Java
 
-#strong[Technologies:] React Native, Expo, React, Next.js, Redux, Zustand, React Query, Jest, Firebase, GitHub, CI\/CD
-
-#strong[Tools:] Xcode, Android Studio, VSCode, Cursor, Postman, Antigravity
+#strong[Technologies:] React Native, Expo, Expo Router, Expo EAS, React, Next.js, Redux, Zustand, React Query, Jest, Firebase, REST API, Git, CI\/CD
 
 == Experience
 
@@ -117,21 +119,21 @@
 
   ],
   main-column-second-row: [
-    - Led and mentored a team of 12+ developers, enforcing TypeScript standards that eliminated runtime errors and boosted team productivity by 25\%.
+    - Led and mentored 12+ developers in Agile sprints, establishing TypeScript-first coding standards and code review practices that reduced production bugs across all team projects
 
-    - Integrated Google's MediaPipe PoseLandmark model for real-time human pose estimation in a fitness app, achieving 95\% pose accuracy across 33 body landmarks for workout tracking.
+    - Integrated Google's MediaPipe PoseLandmark model for real-time human pose estimation in a fitness app, achieving 95\% pose accuracy across 33 body landmarks
 
-    - Architected a Turbo Module for human pose detection supporting React Native's New Architecture, and extended Expo compatibility via a custom config plugin.
+    - Architected a Turbo Module for human pose detection supporting React Native's New Architecture, and extended Expo compatibility via a custom config plugin
 
-    - Created a production-ready React Native boilerplate (Expo SDK 54) featuring TypeScript, Zustand, TanStack Query, i18n, ESLint, Prettier, and Husky pre-commit hooks.
+    - Created a production-ready React Native boilerplate (Expo SDK 57) featuring TypeScript, Expo Router, Zustand, TanStack Query, i18n, ESLint, Prettier, and Husky pre-commit hooks
 
-    - Engineered a high-performance POS system (React Native + Next.js), boosting operational efficiency by 30\% and user satisfaction by 20\%.
+    - Built a high-performance POS system using React Native and Next.js with real-time inventory sync, barcode scanning, and cross-platform support
 
-    - Accelerated app performance by 20\% through the implementation of a new bridgeless architecture and cut project setup time by 30\% by migrating to Expo.
+    - Accelerated app startup by 20\% by adopting React Native's bridgeless architecture and cut project setup time by 30\% via Expo migration
 
-    - Managed end-to-end client communication and delivery for key accounts, achieving a 95\% client satisfaction rate through transparent reporting.
+    - Automated iOS and Android builds and store submissions using Expo EAS, streamlining CI\/CD release pipelines for App Store and Google Play
 
-    - Resolved critical Google Maps integration bugs, cutting client API costs by 40\% and preventing billing leakages.
+    - Resolved critical Google Maps integration bugs, cutting client API costs by 40\% and preventing billing overcharges
 
   ],
 )
@@ -146,13 +148,13 @@
 
   ],
   main-column-second-row: [
-    - Directed and coached a team of 7 developers, establishing React Native coding standards that enhanced collaboration and code quality.
+    - Led a team of 7 developers, implementing React Native coding standards and PR review workflows that improved code consistency and reduced merge conflicts
 
-    - Created an Android native module enabling background tasks with 99.9\% reliability.
+    - Created an Android native module enabling background tasks with 99.9\% reliability
 
-    - Built a food delivery app serving 1,000+ users, implementing real-time tracking and payments via WebSockets and Maps.
+    - Built a food delivery app serving 1,000+ users, implementing real-time tracking and payments via WebSockets and Maps
 
-    - Enhanced app security by resolving subscription loopholes, ensuring 100\% compliance with single-user policies.
+    - Resolved subscription validation loopholes by implementing server-side receipt verification, achieving 100\% compliance with single-user license policies
 
   ],
 )
@@ -167,11 +169,11 @@
 
   ],
   main-column-second-row: [
-    - Engineered 4 scalable mobile apps for event, education, social, and crypto sectors, serving 1,000+ users via iOS and React Native.
+    - Built 4 mobile apps across event, education, social, and crypto sectors, serving 1,000+ users on iOS and React Native
 
-    - Achieved 100\% security compliance by implementing HMAC-based API authentication to mitigate unauthorized access risks.
+    - Implemented HMAC-based API authentication across all apps, achieving 100\% security audit compliance and eliminating unauthorized access
 
-    - Shortened development time by 40\% by migrating native iOS codebases to React Native.
+    - Reduced development time by 40\% by migrating native iOS codebases to React Native
 
   ],
 )
@@ -186,11 +188,11 @@
   [
   ],
   main-column-second-row: [
-    #summary[Expo config plugin to detect installed apps on Android and iOS (256.8K+ downloads)]
+    #summary[Expo config plugin to detect installed apps on Android and iOS (32.5K+ downloads)]
 
-    - Created an Expo module enabling developers to query device-installed apps for feature gating.
+    - Created an Expo module enabling developers to query device-installed apps for feature gating
 
-    - Supports Expo SDK 51+ with automatic native code injection via config plugin.
+    - Implemented automatic native code injection via Expo config plugin, supporting SDK 51+ with zero manual setup
 
   ],
 )
@@ -203,16 +205,35 @@
   [
   ],
   main-column-second-row: [
-    #summary[Real-time pose detection for React Native using MediaPipe BlazePose with GPU acceleration (8.7K+ downloads)]
+    #summary[Real-time pose detection for React Native using MediaPipe BlazePose with GPU acceleration (708+ downloads)]
 
-    - Crafted a high-performance native module supporting 33 pose landmarks with \~15 FPS real-time detection.
+    - Built a high-performance native module supporting 33 pose landmarks with \~15 FPS real-time detection
 
-    - Implemented GPU-accelerated inference for iOS and Android using Vision Camera frame processing.
+    - Implemented GPU-accelerated inference for iOS and Android using Vision Camera frame processing
 
   ],
 )
 
 == Projects
+
+  #regular-entry(
+  [
+    #strong[#link("https://elevynofficialapp.com/")[Elevyn - AI Fitness]]
+
+  ],
+  [
+  ],
+  main-column-second-row: [
+    #summary[AI-powered fitness app with personalized workouts, meal planning, and calorie tracking]
+
+    - Integrated Google's MediaPipe PoseLandmarker for on-device human pose estimation, enabling real-time workout form analysis across 33 body landmarks
+
+    - Built an AI-driven engine generating personalized workout and meal plans based on user body metrics, increasing user engagement by 35\%
+
+    - Implemented camera-based meal scanning to auto-detect macros and calories, streamlining food logging and improving daily tracking consistency by 40\%
+
+  ],
+)
 
   #regular-entry(
   [
@@ -222,34 +243,36 @@
   [
   ],
   main-column-second-row: [
-    #summary[Productivity app helping users block distractions and build healthy habits.]
+    #summary[Productivity app helping users block distractions and build healthy habits]
 
-    - Built native modules for Android (distraction-blocking dialog) and iOS (Screen Time API), achieving a 50\% decrease in user distractions.
+    - Built native modules for Android (distraction-blocking overlay) and iOS (Screen Time API), reducing screen-time on blocked apps by 50\%
 
-    - Formulated a scheduled app-blocking feature, elevating user focus consistency by 40\% during routine intervals.
+    - Developed a scheduled app-blocking feature using AlarmManager and BGTaskScheduler, enabling automated distraction-free intervals
 
-    - Deployed a log file system to track errors and crashes, boosting error resolution efficiency by 50\%.
+    - Deployed a structured log file system to capture errors and crashes, reducing average bug resolution time by 50\%
 
-    - Introduced offline API caching, ensuring 99.9\% uptime and an uninterrupted user experience.
+    - Implemented offline API caching with automatic sync, maintaining app functionality during network outages
 
   ],
 )
 
   #regular-entry(
   [
-    #strong[Elevyn - AI Fitness]
+    #strong[#link("https://www.swivics.com")[Swivics]]
 
   ],
   [
   ],
   main-column-second-row: [
-    #summary[AI-powered fitness app with personalized workouts, meal planning, and calorie tracking.]
+    #summary[Corporate mobility platform streamlining employee commutes via automated scheduling]
 
-    - Integrated Google's MediaPipe PoseLandmarker for on-device human pose estimation, enabling real-time workout form analysis across 33 body landmarks.
+    - Architected a corporate mobility platform using Expo, supporting automated scheduling and recurring ride management for employee transportation
 
-    - Built an AI-driven engine generating personalized workout and meal plans based on user body metrics, increasing user engagement by 35\%.
+    - Designed a resilient background location service that bypasses Android Doze mode and OEM battery optimizations, achieving 100\% tracking uptime
 
-    - Implemented camera-based meal scanning to auto-detect macros and calories, streamlining food logging and boosting daily tracking consistency by 40\%.
+    - Created stutter-free map animations using custom coordinate interpolation for driver markers, delivering smooth real-time location updates
+
+    - Implemented permission handling flows to secure 'Always Allow' location access, resolving background execution failures across Samsung, Xiaomi, and Oppo devices
 
   ],
 )
@@ -262,57 +285,15 @@
   [
   ],
   main-column-second-row: [
-    #summary[Point of Sale system for service management.]
+    #summary[Point of Sale system for service management]
 
-    - Crafted a custom calendar module for service scheduling, enhancing appointment management efficiency by 40\%.
+    - Built a custom calendar module for service scheduling with drag-and-drop support
 
-    - Integrated Apple’s Tap to Pay for secure transactions, increasing payment versatility by 50\%.
+    - Integrated Apple's Tap to Pay SDK for contactless NFC transactions, eliminating the need for external card readers
 
-    - Created a wallet module for JOBR coins, boosting in-app transaction engagement and user retention by 30\%.
+    - Created a digital wallet module for JOBR coins to facilitate in-app transactions
 
-    - Built a web app using Next.js, ensuring consistent cross-platform functionality and refining UX by 40\%.
-
-  ],
-)
-
-  #regular-entry(
-  [
-    #strong[#link("https://mealed.net")[Mealed - Food Ordering]]
-
-  ],
-  [
-  ],
-  main-column-second-row: [
-    #summary[On-demand food ordering and delivery platform.]
-
-    - Integrated React Native Maps for real-time driver tracking, enhancing order capabilities by 50\%.
-
-    - Added Stripe for card payments and created a wallet module, enhancing transaction convenience by 40\%.
-
-    - Implemented real-time push notifications using Notifee, boosting user engagement for order updates by 25\%.
-
-    - Incorporated Agora for in-app calling, elevating communication efficiency by 35\%.
-
-  ],
-)
-
-  #regular-entry(
-  [
-    #strong[Ride2Duty]
-
-  ],
-  [
-  ],
-  main-column-second-row: [
-    #summary[Corporate mobility platform streamlining employee commutes via automated scheduling.]
-
-    - Architected a corporate commute platform using Expo, enabling automated scheduling and recurring ride management for seamless employee transportation.
-
-    - Designed a resilient background location service that bypasses Android battery optimizations (Doze mode), ensuring 100\% real-time tracking reliability.
-
-    - Created stutter-free map animations by implementing custom coordinate interpolation for driver markers, ensuring smooth real-time location updates.
-
-    - Established critical permission handling flows to secure 'Always Allow' access, resolving background execution failures across diverse Android OEM devices.
+    - Built a companion web app using Next.js with shared business logic, enabling consistent cross-platform functionality
 
   ],
 )
