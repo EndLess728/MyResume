@@ -6,7 +6,7 @@
   name: "Mantu",
   title: "Mantu - CV",
   footer: context { [#emph[Mantu -- #str(here().page())\/#str(counter(page).final().first())]] },
-  top-note: [ #emph[Last updated on July 26, 2026] ],
+  top-note: [ #emph[Last updated on Aug 2, 2026] ],
   locale-catalog-language: "en",
   text-direction: ltr,
   page-size: "us-letter",
@@ -80,8 +80,8 @@
   entries-highlights-space-between-bullet-and-text: 0.3em,
   date: datetime(
     year: 2026,
-    month: 7,
-    day: 26,
+    month: 8,
+    day: 2,
   ),
 )
 
@@ -188,7 +188,7 @@ Senior React Native Developer with 7+ years of experience building high-performa
   [
   ],
   main-column-second-row: [
-    #summary[Expo config plugin to detect installed apps on Android and iOS (265.3K+ downloads)]
+    #summary[Expo config plugin to detect installed apps on Android and iOS (271.7K+ downloads)]
 
     - Created an Expo module enabling developers to query device-installed apps for feature gating
 
@@ -205,7 +205,7 @@ Senior React Native Developer with 7+ years of experience building high-performa
   [
   ],
   main-column-second-row: [
-    #summary[Real-time pose detection for React Native using MediaPipe BlazePose with GPU acceleration (9.6K+ downloads)]
+    #summary[Real-time pose detection for React Native using MediaPipe BlazePose with GPU acceleration (10.5K+ downloads)]
 
     - Built a high-performance native module supporting 33 pose landmarks with \~15 FPS real-time detection
 
