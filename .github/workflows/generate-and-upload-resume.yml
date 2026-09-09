@@ -43,80 +43,7 @@ jobs:
           GOOGLE_DRIVE_CREDENTIALS: ${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}
           GOOGLE_DRIVE_FILE_ID: ${{ secrets.GOOGLE_DRIVE_FILE_ID }}
           GOOGLE_DRIVE_FOLDER_ID: ${{ secrets.GOOGLE_DRIVE_FOLDER_ID }}
-        run: |
-          python << 'EOF'
-          import os
-          import json
-          import sys
-          from google.oauth2 import service_account
-          from googleapiclient.discovery import build
-          from googleapiclient.http import MediaFileUpload
-          from googleapiclient.errors import HttpError
-
-          # Load credentials from environment
-          creds_json = os.environ['GOOGLE_DRIVE_CREDENTIALS']
-          creds_dict = json.loads(creds_json)
-
-          # Print service account email for debugging
-          service_email = creds_dict.get('client_email', 'unknown')
-          print(f"🔑 Using service account: {service_email}")
-
-          credentials = service_account.Credentials.from_service_account_info(
-              creds_dict,
-              scopes=['https://www.googleapis.com/auth/drive']  # Full Drive access
-          )
-
-          service = build('drive', 'v3', credentials=credentials)
-
-          file_id = os.environ.get('GOOGLE_DRIVE_FILE_ID')
-          folder_id = os.environ.get('GOOGLE_DRIVE_FOLDER_ID')
-          file_path = 'rendercv_output/Mantu_CV.pdf'
-
-          media = MediaFileUpload(file_path, mimetype='application/pdf', resumable=True)
-
-          try:
-              if file_id:
-                  # UPDATE existing file (keeps same link!)
-                  file = service.files().update(
-                      fileId=file_id,
-                      media_body=media
-                  ).execute()
-                  print(f"✅ Updated existing file: https://drive.google.com/file/d/{file_id}/view")
-              else:
-                  # CREATE new file (first time only)
-                  file_metadata = {
-                      'name': 'Mantu_CV.pdf',
-                      'parents': [folder_id]
-                  }
-                  file = service.files().create(
-                      body=file_metadata,
-                      media_body=media,
-                      fields='id'
-                  ).execute()
-                  new_file_id = file.get('id')
-                  
-                  # Make it publicly accessible
-                  service.permissions().create(
-                      fileId=new_file_id,
-                      body={'type': 'anyone', 'role': 'reader'}
-                  ).execute()
-                  
-                  print(f"✅ Created new file! Add this FILE_ID to GitHub secrets: {new_file_id}")
-                  print(f"📎 Shareable link: https://drive.google.com/file/d/{new_file_id}/view")
-          except HttpError as e:
-              if e.resp.status == 404:
-                  print(f"❌ ERROR: File not found (ID: {file_id})")
-                  print(f"")
-                  print(f"🔧 FIX: Share the file with your service account:")
-                  print(f"   1. Go to Google Drive")
-                  print(f"   2. Right-click on Mantu_CV.pdf → Share")
-                  print(f"   3. Add: {service_email}")
-                  print(f"   4. Give 'Editor' permission")
-                  print(f"   5. Re-run this workflow")
-                  sys.exit(1)
-              else:
-                  raise
-          EOF
+        run: python3 scripts/upload_to_drive.py rendercv_output/Mantu_CV.pdf
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
@@ -140,19 +67,4 @@ jobs:
           REPO: ${{ github.repository }}
           COMMIT_SHA: ${{ github.sha }}
           ACTOR: ${{ github.actor }}
-        run: |
-          TEXT=$(cat <<EOF
-          ✅ <b>Resume Updated Successfully!</b>
-
-          📄 <b>Repository:</b> <code>${REPO}</code>
-          🔗 <b>Commit:</b> <a href="https://github.com/${REPO}/commit/${COMMIT_SHA}">View Commit</a>
-          👤 <b>Triggered by:</b> <code>${ACTOR}</code>
-
-          📎 <a href="https://drive.google.com/file/d/${DRIVE_FILE_ID}/view">View Resume on Google Drive</a>
-          EOF
-          )
-          curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
-            -d chat_id="${TELEGRAM_CHAT_ID}" \
-            -d parse_mode="HTML" \
-            -d disable_web_page_preview="true" \
-            --data-urlencode "text=${TEXT}"
+        run: python3 scripts/notify_telegram.py

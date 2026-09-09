@@ -6,7 +6,7 @@
   name: "Mantu",
   title: "Mantu - CV",
   footer: context { [#emph[Mantu -- #str(here().page())\/#str(counter(page).final().first())]] },
-  top-note: [ #emph[Last updated on Sept 6, 2026] ],
+  top-note: [ #emph[Last updated on Sept 10, 2026] ],
   locale-catalog-language: "en",
   text-direction: ltr,
   page-size: "us-letter",
@@ -81,7 +81,7 @@
   date: datetime(
     year: 2026,
     month: 9,
-    day: 6,
+    day: 10,
   ),
 )
 
@@ -99,13 +99,17 @@
 
 == Profile Summary
 
-Senior React Native Developer with 7+ years of experience building high-performance mobile apps across iOS and Android, specializing in native modules, real-time ML integration, and cross-platform architecture
+Senior React Native developer with 8 years shipping production iOS and Android apps, specializing in scalable cross-platform architecture, Swift and Kotlin native modules, and app performance. Led and mentored teams of up to 12 engineers across the full release cycle, from design to App Store and Google Play delivery
 
 == Skills
 
-#strong[Languages:] JavaScript, TypeScript, Swift, Java
+#strong[Languages:] JavaScript, TypeScript, Swift, Java, GraphQL
 
-#strong[Technologies:] React Native, Expo, Expo Router, Expo EAS, React, Next.js, Redux, Zustand, React Query, Jest, Firebase, REST API, Git, CI\/CD
+#strong[Mobile & Web:] React Native, Expo, Expo Router, Expo EAS, React Navigation, Turbo Modules, Native Modules (Swift\/Kotlin), React, Next.js
+
+#strong[Data & State:] Apollo Client, GraphQL, REST APIs, Redux Toolkit,Redux Saga, Zustand, TanStack Query, offline caching, WebSockets
+
+#strong[Testing & Tooling:] Jest, React Native Testing Library, Detox, Maestro, ESLint, Prettier, Husky, Git, GitHub Actions, CI\/CD, EAS Build\/Submit, App Store & Play Store releases, Firebase (Crashlytics, Analytics)
 
 == Experience
 
@@ -119,21 +123,25 @@ Senior React Native Developer with 7+ years of experience building high-performa
 
   ],
   main-column-second-row: [
-    - Led and mentored 12+ developers in Agile sprints, establishing TypeScript-first coding standards and code review practices that reduced production bugs across all team projects
+    - Led and mentored 12+ developers in Agile sprints, owning technical decision-making and delivery planning, and establishing TypeScript-first coding standards and code review practices that reduced production bugs across all team projects
 
     - Integrated Google's MediaPipe PoseLandmark model for real-time human pose estimation in a fitness app, achieving 95\% pose accuracy across 33 body landmarks
 
     - Architected a Turbo Module for human pose detection supporting React Native's New Architecture, and extended Expo compatibility via a custom config plugin
 
-    - Created a production-ready React Native boilerplate (Expo SDK 57) featuring TypeScript, Expo Router, Zustand, TanStack Query, i18n, ESLint, Prettier, and Husky pre-commit hooks
+    - Integrated GraphQL APIs with Apollo Client, designing queries and mutations, tuning cache and fetch policies, and centralizing error handling while aligning schemas with backend teams
+
+    - Established automated testing with Jest and React Native Testing Library for unit\/integration coverage, plus Detox and Maestro end-to-end suites wired into CI to block regressions before release
+
+    - Defined a scalable app architecture of reusable component libraries, typed navigation flows, and modular state\/networking layers, shipped as a production-ready boilerplate (Expo SDK 57, TypeScript, Expo Router, Zustand, TanStack Query, ESLint, Husky) that cut new-project setup by 30\%
 
     - Built a high-performance POS system using React Native and Next.js with real-time inventory sync, barcode scanning, and cross-platform support
 
-    - Accelerated app startup by 20\% by adopting React Native's bridgeless architecture and cut project setup time by 30\% via Expo migration
+    - Accelerated app startup by 20\% via React Native's bridgeless architecture, and profiled rendering and memory to remove wasted re-renders and leaks for smoother scrolling on low-end devices
 
-    - Automated iOS and Android builds and store submissions using Expo EAS, streamlining CI\/CD release pipelines for App Store and Google Play
+    - Owned release management for App Store and Google Play, automating iOS\/Android builds and store submissions through Expo EAS CI\/CD pipelines
 
-    - Resolved critical Google Maps integration bugs, cutting client API costs by 40\% and preventing billing overcharges
+    - Troubleshot complex production issues end to end, turning Firebase Crashlytics reports into targeted hotfix releases and fixing Google Maps integration bugs that cut client API costs by 40\%
 
   ],
 )
@@ -150,11 +158,13 @@ Senior React Native Developer with 7+ years of experience building high-performa
   main-column-second-row: [
     - Led a team of 7 developers, implementing React Native coding standards and PR review workflows that improved code consistency and reduced merge conflicts
 
+    - Standardized client-side data handling with Redux Toolkit and normalized API caching, replacing ad-hoc state with predictable, testable patterns reused across apps
+
     - Created an Android native module enabling background tasks with 99.9\% reliability
 
-    - Built a food delivery app serving 1,000+ users, implementing real-time tracking and payments via WebSockets and Maps
+    - Built a food delivery app for 1,000+ users with real-time tracking and payments via WebSockets and Maps
 
-    - Resolved subscription validation loopholes by implementing server-side receipt verification, achieving 100\% compliance with single-user license policies
+    - Closed subscription validation loopholes with server-side receipt verification, reaching 100\% license compliance
 
   ],
 )
@@ -171,7 +181,7 @@ Senior React Native Developer with 7+ years of experience building high-performa
   main-column-second-row: [
     - Built 4 mobile apps across event, education, social, and crypto sectors, serving 1,000+ users on iOS and React Native
 
-    - Implemented HMAC-based API authentication across all apps, achieving 100\% security audit compliance and eliminating unauthorized access
+    - Implemented HMAC-based API authentication across all apps, achieving 100\% security audit compliance
 
     - Reduced development time by 40\% by migrating native iOS codebases to React Native
 
@@ -188,7 +198,7 @@ Senior React Native Developer with 7+ years of experience building high-performa
   [
   ],
   main-column-second-row: [
-    #summary[Expo config plugin to detect installed apps on Android and iOS (311.1K+ downloads)]
+    #summary[Expo config plugin to detect installed apps on Android and iOS (32.5K+ downloads)]
 
     - Created an Expo module enabling developers to query device-installed apps for feature gating
 
@@ -205,7 +215,7 @@ Senior React Native Developer with 7+ years of experience building high-performa
   [
   ],
   main-column-second-row: [
-    #summary[Real-time pose detection for React Native using MediaPipe BlazePose with GPU acceleration (17.9K+ downloads)]
+    #summary[Real-time pose detection for React Native using MediaPipe BlazePose with GPU acceleration (708+ downloads)]
 
     - Built a high-performance native module supporting 33 pose landmarks with \~15 FPS real-time detection
 
@@ -226,11 +236,11 @@ Senior React Native Developer with 7+ years of experience building high-performa
   main-column-second-row: [
     #summary[AI-powered fitness app with personalized workouts, meal planning, and calorie tracking]
 
-    - Integrated Google's MediaPipe PoseLandmarker for on-device human pose estimation, enabling real-time workout form analysis across 33 body landmarks
+    - Integrated MediaPipe PoseLandmarker for on-device pose estimation, enabling real-time workout form analysis across 33 landmarks
 
-    - Built an AI-driven engine generating personalized workout and meal plans based on user body metrics, increasing user engagement by 35\%
+    - Built an AI-driven engine generating personalized workout and meal plans, increasing user engagement by 35\%
 
-    - Implemented camera-based meal scanning to auto-detect macros and calories, streamlining food logging and improving daily tracking consistency by 40\%
+    - Implemented camera-based meal scanning to auto-detect macros and calories, improving tracking consistency by 40\%
 
   ],
 )
@@ -266,34 +276,28 @@ Senior React Native Developer with 7+ years of experience building high-performa
   main-column-second-row: [
     #summary[Corporate mobility platform streamlining employee commutes via automated scheduling]
 
-    - Architected a corporate mobility platform using Expo, supporting automated scheduling and recurring ride management for employee transportation
+    - Architected the platform in Expo with automated scheduling and recurring ride management
 
     - Designed a resilient background location service that bypasses Android Doze mode and OEM battery optimizations, achieving 100\% tracking uptime
 
-    - Created stutter-free map animations using custom coordinate interpolation for driver markers, delivering smooth real-time location updates
-
-    - Implemented permission handling flows to secure 'Always Allow' location access, resolving background execution failures across Samsung, Xiaomi, and Oppo devices
+    - Created stutter-free map animations via custom coordinate interpolation for driver markers, and resolved 'Always Allow' permission failures across Samsung, Xiaomi, and Oppo devices
 
   ],
 )
 
   #regular-entry(
   [
-    #strong[#link("https://jobr.com")[JOBR - POS]]
+    #strong[#link("https://apps.apple.com/in/app/mergata/id6753675571")[Mergata]]
 
   ],
   [
   ],
   main-column-second-row: [
-    #summary[Point of Sale system for service management]
+    #summary[Community app for the Albanian diaspora covering border wait times, rideshares, jobs, and housing]
 
-    - Built a custom calendar module for service scheduling with drag-and-drop support
+    - Built geofencing in Expo to detect proximity to border crossings and prompt travelers for real-time wait-time reports
 
-    - Integrated Apple's Tap to Pay SDK for contactless NFC transactions, eliminating the need for external card readers
-
-    - Created a digital wallet module for JOBR coins to facilitate in-app transactions
-
-    - Built a companion web app using Next.js with shared business logic, enabling consistent cross-platform functionality
+    - Integrated interactive maps visualizing border checkpoints, live queue lengths, and crowdsourced crossing-time estimates
 
   ],
 )
