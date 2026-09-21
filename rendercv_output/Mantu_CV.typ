@@ -6,7 +6,7 @@
   name: "Mantu",
   title: "Mantu - CV",
   footer: context { [#emph[Mantu -- #str(here().page())\/#str(counter(page).final().first())]] },
-  top-note: [ #emph[Last updated on Sept 20, 2026] ],
+  top-note: [ #emph[Last updated on Sept 21, 2026] ],
   locale-catalog-language: "en",
   text-direction: ltr,
   page-size: "us-letter",
@@ -81,7 +81,7 @@
   date: datetime(
     year: 2026,
     month: 9,
-    day: 20,
+    day: 21,
   ),
 )
 
@@ -103,7 +103,7 @@ Senior React Native developer with 8 years shipping production iOS and Android a
 
 == Skills
 
-#strong[Languages:] JavaScript, TypeScript, Swift, Java, GraphQL
+#strong[Languages:] JavaScript, TypeScript, Swift, Java
 
 #strong[Mobile & Web:] React Native, Expo, Expo Router, Expo EAS, React Navigation, Turbo Modules, Native Modules (Swift\/Kotlin), React, Next.js
 
@@ -215,7 +215,7 @@ Senior React Native developer with 8 years shipping production iOS and Android a
   [
   ],
   main-column-second-row: [
-    #summary[Real-time pose detection for React Native using MediaPipe BlazePose with GPU acceleration (20.3K+ downloads)]
+    #summary[Real-time pose detection for React Native using MediaPipe BlazePose with GPU acceleration (20.4K+ downloads)]
 
     - Built a high-performance native module supporting 33 pose landmarks with \~15 FPS real-time detection
 
