@@ -19,7 +19,7 @@ cv:
       - Senior React Native developer with 8 years shipping production iOS and Android apps, specializing in scalable cross-platform architecture, Swift and Kotlin native modules, and app performance. Led and mentored teams of up to 12 engineers across the full release cycle, from design to App Store and Google Play delivery
     skills:
       - label: Languages
-        details: JavaScript, TypeScript, Swift, Java, GraphQL
+        details: JavaScript, TypeScript, Swift, Java
       - label: Mobile & Web
         details: React Native, Expo, Expo Router, Expo EAS, React Navigation, Turbo Modules, Native Modules (Swift/Kotlin), React, Next.js
       - label: Data & State
