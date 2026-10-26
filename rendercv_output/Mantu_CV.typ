@@ -6,7 +6,7 @@
   name: "Mantu",
   title: "Mantu - CV",
   footer: context { [#emph[Mantu -- #str(here().page())\/#str(counter(page).final().first())]] },
-  top-note: [ #emph[Last updated on Oct 25, 2026] ],
+  top-note: [ #emph[Last updated on Oct 26, 2026] ],
   locale-catalog-language: "en",
   text-direction: ltr,
   page-size: "us-letter",
@@ -81,7 +81,7 @@
   date: datetime(
     year: 2026,
     month: 10,
-    day: 25,
+    day: 26,
   ),
 )
 
@@ -89,8 +89,8 @@
 = Mantu
 
 #connections(
-  [#link("tel:+91-94645-42728", icon: false, if-underline: false, if-color: false)[094645 42728]],
-  [#link("mailto:mantu.codes@gmail.com", icon: false, if-underline: false, if-color: false)[mantu.codes\@gmail.com]],
+  [#link("tel:+91-97793-77728", icon: false, if-underline: false, if-color: false)[097793 77728]],
+  [#link("mailto:mantu.builds@gmail.com", icon: false, if-underline: false, if-color: false)[mantu.builds\@gmail.com]],
   [#link("https://www.linkedin.com/in/mantu-kumar-16439117b/", icon: false, if-underline: false, if-color: false)[Linkedin]],
   [#link("https://endless728.github.io/", icon: false, if-underline: false, if-color: false)[endless728.github.io]],
   [#link("https://github.com/EndLess728", icon: false, if-underline: false, if-color: false)[github.com\/EndLess728]],
